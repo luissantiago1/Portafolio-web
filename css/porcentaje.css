@@ -1,0 +1,145 @@
+  .outer {
+	font-size: 22px;
+	letter-spacing: 1px;
+	font-weight: 700;
+  font-family: 'Montserrat', sans-serif;   
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height: 160px;
+    width: 160px;
+    padding: 20px;
+    border-radius: 50%;
+	border: 20px solid rgb(226, 186, 248);
+	box-shadow: 0px 0px 5px 1px rgb(217, 176, 255),
+		inset 0px 0px 5px 1px rgb(217, 176, 255);
+	}
+
+
+/* variables que se usan para llamar la clase */
+  .percent-0 {
+    --per_skill: 450.0;
+  }
+  
+  .percent-5 {
+    --per_skill: 427.5;
+  }
+  
+  .percent-10 {
+    --per_skill: 405.0;
+  }
+  
+  .percent-15 {
+    --per_skill: 382.5;
+  }
+  
+  .percent-20 {
+    --per_skill: 360.0;
+  }
+  
+  .percent-25 {
+    --per_skill: 337.5;
+  }
+  
+  .percent-30 {
+    --per_skill: 315.0;
+  }
+  
+  .percent-35 {
+    --per_skill: 292.5;
+  }
+  
+  .percent-40 {
+    --per_skill: 270.0;
+  }
+  
+  .percent-45 {
+    --per_skill: 247.5;
+  }
+  
+  .percent-50 {
+    --per_skill: 225.0;
+  }
+  
+  .percent-55 {
+    --per_skill: 202.5;
+  }
+  
+  .percent-60 {
+    --per_skill: 180.0;
+  }
+  
+  .percent-65 {
+    --per_skill: 157.5;
+  }
+  
+  .percent-70 {
+    --per_skill: 135.0;
+  }
+  
+  .percent-75 {
+    --per_skill: 112.5;
+  }
+  
+  .percent-80 {
+    --per_skill: 90.0;
+  }
+  
+  .percent-85 {
+    --per_skill: 67.5;
+  }
+  
+  .percent-90 {
+    --per_skill: 45.0;
+  }
+  
+  .percent-95 {
+    --per_skill: 22.5;
+  }
+  
+  .percent-100 {
+    --per_skill: 0.0;
+  }
+  
+  .una_skill {
+    position: relative;
+  }
+  
+  .una_skill h3 {
+    text-align: center;
+	margin-top: 25px;
+	font-size: 25px;
+    font-family: 'Montserrat', sans-serif;   
+  }
+  
+ #Conocimientos svg {
+	width: 160px;
+	height: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+  
+  @keyframes anim {
+    100% {
+      stroke-dashoffset: var(--per_skill);
+    }
+  }
+
+  #Conocimientos .col-md-4{
+	display: flex;
+	justify-content: center;
+	margin-top: 70px;
+  }
+  
+
+  #Conocimientos circle {
+    transform: translateY(160px) rotate(270deg);
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: anim 1.5s linear forwards;
+  }
