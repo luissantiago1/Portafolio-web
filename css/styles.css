@@ -1,6 +1,6 @@
 /* tipografias*/
-/* @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html{
     /* me permite deslizar cuando hago clic en los links del menu */
@@ -15,8 +15,7 @@ body{
 
 /* letras */
 a,button,h1,h2,h3,h4,h5,h6{
-    /*font-family: 'Montserrat', sans-serif; */
-    font-family: cursive;
+    font-family: 'Montserrat', cursive;
     color: white !important;
 }
 
